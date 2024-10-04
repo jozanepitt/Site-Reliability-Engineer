@@ -22,5 +22,5 @@
 
 ## Observability
 - Use tools like Prometheus and Grafana for monitoring.
-- Implement logging using ELK stack or similar solutions.
+
 
