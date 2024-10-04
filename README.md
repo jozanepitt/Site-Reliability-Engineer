@@ -17,7 +17,7 @@
 
 3. **Deploy to Kubernetes**:
     ```sh
-    kubectl apply -f k8s/
+    kubectl apply -f kubectl apply -f kubernetes/
     ```
 
 ## Observability
