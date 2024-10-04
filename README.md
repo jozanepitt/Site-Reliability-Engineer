@@ -1,26 +1,26 @@
-# Site-Reliability-Engineer
-# My Application
+# SRE-Test App
 
 ## Setup
 
 1. **Terraform**:
     ```sh
-    cd terraform
+    cd infra
     terraform init
     terraform apply
     ```
 
 2. **Build Docker Image**:
     ```sh
-    cd app
-    docker build -t my-app .
+    cd src
+    docker build -t SRE-Test-app .
     ```
 
 3. **Deploy to Kubernetes**:
     ```sh
-    kubectl apply -f kubernetes/
+    kubectl apply -f k8s/
     ```
 
 ## Observability
 - Use tools like Prometheus and Grafana for monitoring.
 - Implement logging using ELK stack or similar solutions.
+
