@@ -1,25 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app
+  name: SRE-Test-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: my-app
+      app: SRE-Test-app
   template:
     metadata:
       labels:
-        app: my-app
+        app: SRE-Test-app
     spec:
       containers:
-      - name: my-app
-        image: my-app:latest
+      - name: SRE-Test-app
+        image: SRE-Test-app:latest
         ports:
-        - containerPort: 5000
+        - containerPort: 8000
         envFrom:
         - configMapRef:
             name: app-config
         - secretRef:
             name: app-secret
+
 
